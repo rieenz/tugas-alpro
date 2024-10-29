@@ -7,7 +7,6 @@ harga = 1500
 tv = 15
 kipas = 10
 lampu = 5
-ac = 20
 
 total_pemakaian_tv = tv * a
 total_pemakaian_kipas = kipas * b
@@ -29,6 +28,6 @@ total_harga_pemakaian_tv= total_pemakaian_bulan_tv * harga
 total_harga_pemakaian_kipas= total_pemakaian_bulan_kipas * harga 
 total_harga_pemakaian_lampu= total_pemakaian_bulan_lampu * harga  
 
-print("Total harga pemakaian: ", total_harga_pemakaian_tv)
-print("Total harga pemakaian: ", total_harga_pemakaian_kipas)
-print("Total harga pemakaian: ", total_harga_pemakaian_lampu)
+print("Total harga pemakaian: Rp.", total_harga_pemakaian_tv)
+print("Total harga pemakaian: Rp.", total_harga_pemakaian_kipas)
+print("Total harga pemakaian: Rp.", total_harga_pemakaian_lampu)
