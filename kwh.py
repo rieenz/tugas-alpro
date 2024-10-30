@@ -1,27 +1,41 @@
 a = int(input('masukan lama pemakaian tv perjam :'))
-b = int(input('masukan lama pemakaian kipas perjam :'))
-c = int(input('masukan lama pemakaian lampu perjam :'))
+b = int(input('masukan daya tv :'))
+harga = int(input('harga kwh :'))
 
-tv = int(input('masukan daya tv :'))
-kipas = int(input('masukan daya kipas :'))
-lampu = int(input('masukan daya lampu : :'))
+hasil = a * b
+tv = hasil / 1000
 
-total_pemakaian_tv = tv * a / 1000
-total_pemakaian_kipas = kipas / 1000
-total_pemakaian_lampu = lampu / 1000
+harga_total_tv = tv * 1500
 
-print('total pemakaian per jam: ', total_pemakaian_tv)
-print('total pemakaian per jam: ', total_pemakaian_kipas)
-print('total pemakaian per jam: ', total_pemakaian_lampu)
+print('harga total tv perjam: Rp', harga_total_tv)
 
-total_pemakaian_bulan_tv = total_pemakaian_tv * 30
-total_pemakaian_bulan_kipas = total_pemakaian_kipas * 30
-total_pemakaian_bulan_lampu = total_pemakaian_lampu * 30
+bulan = harga_total_tv * 30
+print('harga total tv bulan: Rp', bulan)
 
-print('total pemakaian  perbulan:', total_pemakaian_bulan_tv,'kwh')
-print('total pemakaian  perbulan:', total_pemakaian_bulan_kipas,'kwh')
-print('total pemakaian  perbulan:', total_pemakaian_bulan_lampu,'kwh')
+a = int(input('masukan lama pemakaian kipas perjam :'))
+b = int(input('masukan daya kipas :'))
+harga = int(input('harga kwh :'))
 
+hasil = a * b
+kipas = hasil / 1000
 
+harga_total_kipas = kipas * 1500
 
+print('harga total kipas perjam: Rp', harga_total_kipas)
 
+bulan = harga_total_kipas * 30
+print('harga total kipas bulan: Rp', bulan)
+
+a = int(input('masukan lama pemakaian lampu perjam :'))
+b = int(input('masukan daya lampu :'))
+harga = int(input('harga kwh :'))
+
+hasil = a * b
+lampu = hasil / 1000
+
+harga_total_lampu = lampu * 1500
+
+print('harga total lampu perjam: Rp', harga_total_lampu)
+
+bulan = harga_total_lampu * 30
+print('harga total lampu bulan: Rp', bulan)
